@@ -1,0 +1,202 @@
+$mainFontColor: #26272a;
+$aboutmeFontColor: #26272a;
+
+%headerStyle {
+    text-transform: uppercase;
+    font-family: 'Raleway Extra Bold';
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1.08px;
+}
+
+body {
+    color: $mainFontColor;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.container {
+
+}
+
+h3 {
+    text-transform: uppercase;
+    font-family: 'Raleway Extra Bold';
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1.08px;
+    border-bottom: 1px solid black;
+}
+
+p {
+    font-family: "Raleway Medium";
+    font-size: 16px;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+}
+
+.about__me {
+    width: 400px;
+    color: $aboutmeFontColor;
+    background-color: #ecedeb;
+    height: 100%;
+
+    div:first-child {
+        padding-top: 30px;;
+    }
+
+    .container {
+        div:nth-child(-n+2) {
+            position: relative;
+            left: 70px;
+        }
+    }
+
+    .about__me__name {
+        margin-top: 30px;
+        margin-bottom: 70px;
+
+        p:first-child {
+            font-family: 'Raleway';
+            font-size: 42px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        p:last-child {
+            text-transform: uppercase;
+            font-family: 'Raleway Medium';
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 1.08px;
+        }
+    }
+
+    .about__me__summary {
+        margin-left: 30px;
+        margin-right: 50px;
+
+        h3 {
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+    
+        li {
+            font-family: "Raleway Medium";
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .main_list {
+            li:before {
+                content: '\25c9';
+            }
+
+            ul {
+
+                position: relative;
+                left: 20px;
+
+                li:first-child {
+                    margin-top: 5px;
+                }
+
+                li:before {
+                    content: '\2713';
+                }
+            }
+        }
+    }
+
+    .about__me__contacts {
+        margin-top: 30px;
+        margin-left: 30px;
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        li:first-child {
+            &::before {
+                content: url("https://img.icons8.com/fluent-systems-filled/24/000000/phone.png");
+                position: relative;
+                top: 7px;
+            }
+        }
+
+        li:nth-child(2) {
+            &::before {
+                content: url('https://img.icons8.com/metro/26/000000/email.png');
+                position: relative;
+                top: 10px;
+                left: -2px;
+            }
+        }
+
+        a {
+            color: $mainFontColor;
+            text-decoration: none;
+        }
+
+        li:nth-child(3) {
+            
+            position: relative;
+            left: -6px;
+
+            a::before {
+                content: url("https://img.icons8.com/ios-glyphs/30/000000/telegram-app.png");
+                position: relative;
+                top: 9px;
+            }
+        }
+
+        li:nth-child(4) {
+            a::before {
+                content: url("https://img.icons8.com/android/24/000000/linkedin.png");
+                position: relative;
+                top: 5px;
+            }
+        }
+    }
+}
+
+.experience {
+    width: 400px;
+    height: 100vh;
+    margin-top: 150px;
+
+    h3 {
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+
+    .experience__skills {
+        margin-bottom: 50px;
+
+        li:before {
+            content: url('https://img.icons8.com/fluent-systems-regular/24/000000/checked-checkbox.png');
+            position: relative;
+            top: 5px;
+        }
+    }
+
+    .experience__work {
+        margin-bottom: 50px;
+    }
+
+    .experience__education {
+        margin-bottom: 50px;
+    }
+
+    .experience__english {
+        margin-bottom: 50px;
+    }
+}
