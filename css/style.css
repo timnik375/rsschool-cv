@@ -36,7 +36,7 @@ img {
   .about__me .about__me__name {
     margin-top: 30px;
     margin-bottom: 70px; }
-    .about__me .about__me__name p:first-child {
+    .about__me .about__me__name h1 {
       font-family: 'Raleway';
       font-size: 42px;
       font-weight: bold;
